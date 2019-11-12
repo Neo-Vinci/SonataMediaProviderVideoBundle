@@ -7,7 +7,7 @@ parameters:
 
 services:
     sonata.media.provider.video:
-        class: %xmon_video.provider.video.class%
+        class: '%xmon_video.provider.video.class%'
         tags:
             - { name: sonata.media.provider }
         arguments:
