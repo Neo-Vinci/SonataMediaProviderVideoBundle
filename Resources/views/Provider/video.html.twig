@@ -3,6 +3,9 @@
 <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>  
 
 {# calculo el alto escalado del vídeo #}
+{% if width is not defined %}
+{% set width=100 %}
+{% endif %}
 {% set height = width * media.height / media.width %}
 
 <video 
